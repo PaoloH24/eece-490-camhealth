@@ -30,9 +30,6 @@ Follow these steps to set up the project environment locally.
 *   Python 3.9 or later installed.
 *   `pip` (Python package installer).
 *   Git (for cloning the repository).
-*   Accounts and API Keys for:
-    *   Roboflow (API Key and Classification Model ID is required - the model used in the code is `food-101-ih2pp/4`)
-    *   OpenAI (API Key and Assistant ID is required - the assistant used in the code is `asst_Qwxm9bSS2gu771Cqx3jG46B6`)
 
 ### Setup Steps
 
@@ -66,30 +63,6 @@ Follow these steps to set up the project environment locally.
     python csv.py
     ```
     This command will create the `calorie_table_processed.csv` file in the same directory. If you update the data within `csv.py`, you will need to run this script again.
-
-5.  **Configure API Keys and IDs (Streamlit Secrets):**
-    Create a file named `.streamlit/secrets.toml` in your project directory (create the `.streamlit` folder if it doesn't exist). Add your API keys and Assistant ID to this file like follows:
-
-    ```toml
-    # .streamlit/secrets.toml
-
-    # --- OpenAI Configuration ---
-    # Ensure this key is used in ut.py where openai.api_key is set, or modify ut.py accordingly
-    OPENAI_API_KEY = "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" 
-
-    # Ensure this key is used in ut.py for the ASSISTANT_ID constant
-    ASSISTANT_ID = "asst_Qwxm9bSS2gu771Cqx3jG46B6"        
-
-    # --- Roboflow Configuration ---
-    # Ensure these keys match how they are accessed in stream.py (e.g., st.secrets["ROBOFLOW_API_KEY"])
-    # Note: The provided stream.py currently hardcodes these. Modify stream.py to use secrets for production.
-    ROBOFLOW_API_KEY = "xxxxxxxxxxxxxxxxxxxx"           # Replace with your actual Roboflow API Key
-    ROBOFLOW_MODEL_ID = "food-101-ih2pp/4"    
-
-    # Optional: If using a different Roboflow API URL (e.g., for serverless)
-    ROBOFLOW_API_URL = "https://detect.roboflow.com" # Adjust if necessary based on Roboflow model type/deployment
-    ```
-    **Important:** Modify the application code (`stream.py` and `ut.py`) to consistently retrieve these values using `st.secrets["KEY_NAME"]` instead of hardcoding them, especially for production use.
 
 ## Running the Application
 
