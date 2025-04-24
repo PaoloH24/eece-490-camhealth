@@ -2,7 +2,11 @@
 
 This repository contains the source code and documentation for our EECE 490 course project, supervised by Prof. Ammar Mohanna.
 
-
+# To Prof. Mohanna:
+* CAMHEALTH.pptx is the power point that we used in the class presentation.
+* The Docker image is uploaded here: https://drive.google.com/drive/folders/1NRVPpU5zTn9lK2pYf5crX_m7SlFf6g-Q
+* The Full Report is uploaded to github, under filename: final_report.pdf
+* You have been added to our Roboflow workspace (names hossammostafa19). The project that contains the model that we used is FOOD 101. You can also see the old project, called food_detection, which is not deployed in the project because of poor performance.
 
 ## Project Contributors
 
