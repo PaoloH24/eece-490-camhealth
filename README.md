@@ -82,13 +82,3 @@ Once the setup is complete:
 1.  Open the application in your web browser.
 2.  Follow the on-screen prompts: Upload an image -> Confirm/Select food -> Specify quantity -> Add extras (optional) -> Calculate.
 3.  Interact with the CAMHEALTH assistant for feedback and Q&A in the final step.
-
-## `requirements.txt` Contents
-
-If a `requirements.txt` file is not included, create one with the following content:
-
-```txt
-streamlit
-openai>=1.0.0 # Ensure version supports the required beta Assistants API features
-inference-sdk # Roboflow SDK
-Pillow
