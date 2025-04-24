@@ -6,8 +6,8 @@ This repository contains the source code and documentation for our EECE 490 cour
 
 ## Project Contributors
 
-*   [Paolo Hadaie]
-*   [Hossam Mostafa]
+*   Paolo Hadaie
+*   Hossam Mostafa
 
 ## Project Overview
 
